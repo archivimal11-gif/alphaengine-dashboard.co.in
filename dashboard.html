@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta http-equiv="refresh" content="20">
+<title>MTF Alpha Bot Dashboard</title>
+<style>
+body { font-family: 'Courier New', monospace; background:#0d0d0d; color:#ddd; padding:20px; }
+.xdash { border-collapse: collapse; background:#000; border:1px solid #333; }
+.xdash td { padding:6px 14px; border-bottom:1px solid #222; font-size:14px; }
+.xdash .title { background:#111; color:#4caf50; font-weight:bold; text-align:center; letter-spacing:2px; }
+.label { color:#888; }
+.note { color:#777; font-size:12px; font-style:italic; }
+</style></head><body>
+<h2>MTF Alpha Bot — Live Dashboard</h2>
+<p>Last updated: 2026-07-21 09:45:00+05:30</p>
+
+<table class="xdash">
+<tr><td class="title" colspan="4">SIGNAL DASHBOARD</td></tr>
+<tr><td class="label">SIGNAL</td>
+    <td style="color:#4caf50;font-weight:bold;">BUY</td>
+    <td style="color:#888;">6 OF 7</td>
+    <td>LONG READY</td></tr>
+<tr><td class="label">SIGNAL STRENGTH</td>
+    <td style="color:#4caf50;">86%</td>
+    <td style="color:#4caf50;">BULL</td><td></td></tr>
+<tr><td class="label">REVERSAL STRENGTH</td>
+    <td style="color:#4caf50;">141%</td>
+    <td style="color:#4caf50;">GAP SURGING</td><td></td></tr>
+<tr><td></td><td></td><td class="note">Favouring signal</td><td></td></tr>
+<tr><td class="label">GAP STRENGTH</td><td></td>
+    <td style="color:#888;">6/7 UP</td><td></td></tr>
+<tr><td class="label">ALPHA SCORE</td>
+    <td style="color:#4caf50;">100</td>
+    <td style="color:#888;">Very Strong</td><td></td></tr>
+<tr><td></td>
+    <td style="color:#4caf50;">BULL</td>
+    <td class="note">Favouring signal</td><td></td></tr>
+<tr><td class="label">REVERSAL SCORE</td>
+    <td style="color:#ff9800;">100%</td>
+    <td style="color:#888;">Very Strong</td><td></td></tr>
+<tr><td></td>
+    <td style="color:#4caf50;">BULL</td>
+    <td class="note">Favouring signal</td><td></td></tr>
+<tr><td class="label" colspan="2">CONDITION OF SIGNALS CORRELATION:</td>
+    <td colspan="2" style="color:#4caf50;">3/3 aligned BULL</td></tr>
+</table>
+
+<h3 style="margin-top:24px;">Main Dashboard (Pine-style)</h3>
+<table class="xdash">
+<tr><td class="title">TF</td><td class="title">T Left</td><td class="title">Bias</td><td class="title">TWAP Gap</td></tr>
+<tr><td>15m</td><td>10m</td><td style='color:#4caf50;'>Bull</td><td>6.4</td></tr><tr><td>30m</td><td>25m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr><tr><td>45m</td><td>10m</td><td style='color:#f44336;'>Bear</td><td>15.8</td></tr><tr><td>1H</td><td>25m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr><tr><td>2H</td><td>25m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr><tr><td>3H</td><td>145m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr><tr><td>4H</td><td>145m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr><tr><td>Daily</td><td>865m</td><td style='color:#4caf50;'>Bull</td><td>17.5</td></tr>
+<tr><td class="label">Signal 91%</td><td colspan="2">confirm</td>
+    <td>STRONG BUY</td></tr>
+<tr><td class="label" colspan="2">Buy zone (approx)</td>
+    <td colspan="2" style="color:#4caf50;">97% Strong</td></tr>
+<tr><td class="label" colspan="2">Sell zone (approx)</td>
+    <td colspan="2" style="color:#f44336;">3% No Signal</td></tr>
+<tr><td class='label' colspan='2'>Reversal Probability</td><td colspan='2' style='color:#4caf50;'>11% | 1v5 | Low</td></tr>
+<tr><td class="label">TRENDING</td>
+    <td colspan="2" style="color:#4caf50;">TRENDING score 0/4</td><td></td></tr>
+<tr><td class="label" colspan="4">zone signals (per-TF buy%, exact formula)</td></tr>
+<tr><td>15m</td><td>30m</td><td>45m</td><td>1H</td><td>2H</td><td>3H</td><td>4H</td><td>Daily</td></tr>
+<tr><td>50%</td><td>100%</td><td>0%</td><td>100%</td><td>96%</td><td>100%</td><td>76%</td><td>80%</td></tr>
+</table>
+<p class="note">Buy/Sell zone %, and the overall composite, are an approximation of the Pine
+script's "8-layer" formula — not a byte-for-byte match. Per-TF Bias/Gap/T-Left, Signal %,
+and TRENDING score are exact.</p>
+
+<p><b>OPEN POSITION</b><br>Symbol: NSE:NIFTY2672124250CE<br>Side: LONG<br>Qty: 2850<br>Entry: ~45.75</p>
+
+<h3>Trade Levels (this position)</h3>
+<table class="xdash">
+<tr><td class="label">Entry (underlying)</td><td colspan="3">24253.65</td></tr>
+<tr><td class="label">Stop-Loss</td><td colspan="3">Stop-Loss: 24212.07 (41.6 pts from entry)</td></tr>
+<tr><td class="label">Partial Target</td><td colspan="3">Partial Target (T3): not locked yet (needs gap to grow further)</td></tr>
+<tr><td class="label">Liquidity Target</td><td colspan="3">Liquidity Zone Target: 24367.30 (113.6 pts from entry)</td></tr>
+<tr><td class="label">Full Exit Rule</td><td colspan="3">MTF bias-flip OR stop-loss OR square-off (no fixed price target)</td></tr>
+</table>
+<p class="note">Partial exit (50%) fires at whichever of T3 / Liquidity Zone is reached first.</p>
+<p>Dummy balance: ₹132603</p>
+<h3>Recent events</h3>
+<ul><li>2026-07-21 09:45:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2850 @ ~45.75 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~45.8 P&L=₹0 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2850 @ ~45.8 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~46 P&L=₹2992 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2850 @ ~44.95 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~45.85 P&L=₹971 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2775 @ ~45.5 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~45.4 P&L=₹-416 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2775 @ ~45.55 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~46.8 P&L=₹3240 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2700 @ ~45.6 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~44.4 P&L=₹-3885 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2775 @ ~45.8 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~45.6 P&L=₹-1526 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2775 @ ~46.15 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~46.15 P&L=₹1249 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2775 @ ~45.7 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~47.2 P&L=₹135 (Trailing stop hit)</li><li>2026-07-21 09:30:00+05:30 ENTRY LONG NSE:NIFTY2672124250CE qty=2700 @ ~47.15 (signal)</li><li>2026-07-21 09:30:00+05:30 EXIT NSE:NIFTY2672124250CE @ ~48.45 P&L=₹788 (Trailing stop hit)</li></ul>
+</body></html>
